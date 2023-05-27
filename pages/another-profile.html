@@ -41,16 +41,14 @@
         <section class="profile">
             <h2 class="general-title">Профиль</h2>
             <div class="profile__container">
-                <div class="profile__form form">
-                    <form class="form__user-information user-information" action="#" method="post">
-                        <fieldset class="user-information__container">
-                            <label class="user-information__label-photo" for="user-photo"></label>
-                            <input class="user-information__photo visually-hidden" type="file" name="photo" id="user-photo">
-                            <label class="visually-hidden" for="description-user">Описание пользователя</label>
-                            <textarea class="user-information__description" name="description-user" id="description-user" cols="30" rows="5" placeholder="О себе"></textarea>
-                            <output class="user-information__name">Александр Богдан</output>
-                        </fieldset>
-                    </form>
+                <div class="profile__form">
+                    <div class="form__user-information user-information">
+                        <div class="user-information__container">
+                            <img src="#" class="user-information__label-photo" alt="Фотография пользователя">
+                            <p class="user-information__description"></p>
+                            <p class="user-information__name">Александр Богдан</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="profile__more-information more-information">
                     <ul class="more-information__list reset-list">
