@@ -50,6 +50,8 @@
                             <textarea class="user-information__description" name="description-user" id="description-user" cols="30" rows="5" placeholder="О себе"></textarea>
                             <output class="user-information__name">Александр Богдан</output>
                         </fieldset>
+
+                        <button class="profile__form-button">Сохранить</button>
                     </form>
                 </div>
                 <div class="profile__more-information more-information">
@@ -73,18 +75,35 @@
 
                     <div class="more-information__project project">
                         <div class="project__wrapper">
-                            <a class="project__add" href="../pages/personal-profile-projects.html"><span class="plus"></span></a>
+                            <button class="project__add"><span class="plus"></span></button>
                             <span class="project__title">Проекты</span>
+                            <!-- href="../pages/personal-profile-projects.html -->
                         </div>
-                        <div class="project__wrapper">
+                        <!-- <div class="project__wrapper">
                             <a class="project__add" href="../pages/personal-profile-pictures.html"><span class="plus"></span></a>
                             <span class="project__title">Картины</span>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
             </div>
         </section>
+
+
+        <div class="popup visually-hidden">
+            <div class="popup__container">
+                <a class="close"></a>
+                <p class="popup__title">Ваша работа</p>
+                <form class="popup__form" action="post">
+                    <fieldset class="popup__data data">
+                        <label for="project-name"></label>
+                        <input class="data__name" type="text" id="project-name" placeholder="Название">
+                        <label class="personal-project__add-new" for="choose-personal-project"><span class="plus"></span></label>
+                        <input class="visually-hidden" type="file" id="choose-personal-project"></input>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
 
     </main>
 
@@ -95,5 +114,6 @@
         </div>
     </footer>
 
+    <script src="../popup.js"></script>
 </body>
 </html>
