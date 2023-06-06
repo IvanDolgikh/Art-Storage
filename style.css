@@ -47,6 +47,7 @@ body{
 .main-header{
     width: 1440px;
     margin: 0 auto;
+    position: relative;
 }
 
 .main-nav{
@@ -98,7 +99,7 @@ body{
     background: url('photos/Background.jpg');
 }
 
-.user__profile-link{
+.user__edit{
     display: block;
     text-decoration: none;
     color: #ffffff;
@@ -106,7 +107,57 @@ body{
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
-    margin-top: 99px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.user__exit{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: MS PGothic, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.user__profile-link{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: MS PGothic, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.user__settings-container .user__profile-link{
+    margin-bottom: 30px;
+}
+
+.main-nav__user{
+    margin-top: auto;
+}
+
+.user__settings-container{
+    position: absolute;
+    right: 0;
+    padding-top: 40px;
+    display: none;
+}
+
+.main-nav__user:hover .user__settings-container{
+    display: block;
+}
+
+.user__open-settings{
+    display: block;
+    margin-top: auto;
+    padding-left: 60px;
 }
 
 .profile-link__text{
@@ -338,11 +389,10 @@ body{
 
 .profile__more-information{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .more-information__list{
-    margin-right: 140px;
     padding-top: 50px;
     width: 235px;
 }
@@ -367,7 +417,7 @@ body{
 }
 
 .profile__container .project{
-    margin: 0;
+    margin: 0 auto;
 }
 
 .project__add{
@@ -576,6 +626,7 @@ body{
 
 .achievements__list{
     display: flex;
+    justify-content: flex-start;
     position: relative;
     top: 50%;
     transform: translateY(-50%);

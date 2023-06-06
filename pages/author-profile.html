@@ -27,12 +27,16 @@
                 <img src="../photos/logo.svg" alt="Логотип ArtStorage.">
             </a>
             <div class="main-nav__user user">
-                <a class="user__profile-link profile-link" href="#">
-                    <span class="profile-link__text">Профиль</span> 
-                    <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.7071 8.70711C21.0976 8.31658 21.0976 7.68342 20.7071 7.29289L14.3431 0.928932C13.9526 0.538408 13.3195 0.538408 12.9289 0.928932C12.5384 1.31946 12.5384 1.95262 12.9289 2.34315L18.5858 8L12.9289 13.6569C12.5384 14.0474 12.5384 14.6805 12.9289 15.0711C13.3195 15.4616 13.9526 15.4616 14.3431 15.0711L20.7071 8.70711ZM0 9H20V7H0V9Z" fill="white"/>
-                    </svg>
+                <a class="user__open-settings" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5,9v2h40v-2zM5,24v2h40v-2zM5,39v2h40v-2z"></path></g></g></svg>
                 </a>
+
+                <div class="user__settings-container">
+                    <a class="user__profile-link profile-link" href="../pages/author-profile.html">Профиль</a>
+                    <a class="user__edit" href="../pages/profile.html">Редактировать</a>
+                    <button class="user__exit">Выход</button>
+                </div>
+
             </div>
         </nav>
     </header>
@@ -44,10 +48,10 @@
             <span class="author-profile__name">Данил Афанасьев</span>
             <span class="author-profile__description">Начинающий Дизайнер, самоучка</span>
             <div class="decorative-line"></div>
-            
+
+
             <form class="author-profile__information-form information-form" action="#" method="get">
                 <button class="information-form__subscribe subscribe--change">Подписаться</button>
-            
                 <dl class="information-form__description-list description-list">
                     <div class="description-list__item-container item-container">
                         <dt class="item-container__item item-description">
