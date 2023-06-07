@@ -988,6 +988,15 @@ body{
     margin-bottom: 40px;
 }
 
+.likes__button{
+    width: min-content;
+    height: min-content;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
 .likes__amount{
     display: block;
     font-family: MS PGothic, sans-serif;
